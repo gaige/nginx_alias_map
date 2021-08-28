@@ -1,0 +1,5 @@
+map $uri $redirect_uri {
+	~^/node/first$ https://$server_name/this-content-has-two-aliases.html;
+	~^/node/second$ https://$server_name/this-content-has-two-aliases.html;
+	~^/node/single$ https://$server_name/this-content-has-one-alias.html;
+  }
