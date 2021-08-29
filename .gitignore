@@ -2,3 +2,4 @@ poetry.lock
 dist/
 .idea/
 __pycache__/
+.tox/

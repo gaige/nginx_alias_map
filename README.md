@@ -1,9 +1,9 @@
 nginx_alias_map: A Plugin for Pelican
 ====================================================
 
-[![Build Status](https://img.shields.io/github/workflow/status/pelican-plugins/nginx_alias_map/build)](https://github.com/gaige/nginx_alias_map/actions)
-[![PyPI Version](https://img.shields.io/pypi/v/pelican-nginx_alias_map)](https://pypi.org/project/pelican-nginx_alias_map/)
-![License](https://img.shields.io/pypi/l/pelican-nginx_alias_map?color=blue)
+[![Build Status](https://img.shields.io/github/workflow/status/gaige/nginx_alias_map/build)](https://github.com/gaige/nginx_alias_map/actions)
+[![PyPI Version](https://img.shields.io/pypi/v/pelican-nginx-alias-map)](https://pypi.org/project/pelican-nginx-alias-map/)
+![License](https://img.shields.io/pypi/l/pelican-nginx-alias-map?color=blue)
 
 
 This Pelican plugin creates an nginx-compatible map between the final page locations
