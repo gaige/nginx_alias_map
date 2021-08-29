@@ -1,6 +1,7 @@
 import logging
 import os.path
 from re import escape
+import sys
 from urllib.parse import urlparse
 
 from pelican import signals
@@ -21,7 +22,10 @@ class NginxAliasMapGenerator:
         partial_url = page.url
         if not urlparse(partial_url).scheme:
             partial_url = "https://$server_name/" + partial_url
-        quoted_alias = escape(alias)
+        if sys.version_info < (3, 7):
+            quoted_alias = escape(alias).replace("\\/", "/")
+        else:
+            quoted_alias = escape(alias)
         alias_line = f"\t~^{quoted_alias}$ {partial_url};"
         fd.write(alias_line + "\n")
 
