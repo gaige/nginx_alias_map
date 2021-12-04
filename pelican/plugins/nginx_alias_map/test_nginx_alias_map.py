@@ -21,6 +21,8 @@ class TestNginxAliasMap(unittest.TestCase):
             "OUTPUT_PATH": self.temp_path,
             "PLUGINS": [nginx_alias_map],
             "LOCALE": locale.normalize("en_US"),
+            "TIMEZONE": "UTC",
+            "SITEURL": "https://mysite.dev",
         }
         if override:
             settings.update(override)
