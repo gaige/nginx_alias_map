@@ -42,7 +42,7 @@ markdown = "^3.2, != 3.3.5"
 pytest = "^7.3.2"
 pytest-cov = "^3.0"
 pytest-pythonpath = "^0.7"
-pytest-sugar = "^0.9"
+pytest-sugar = "^1.0"
 Werkzeug = "^2.0"
 
 [tool.poetry.extras]
