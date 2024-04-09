@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
       - name: Set up Pip cache
@@ -30,7 +30,7 @@ jobs:
       - name: Install Poetry
         run: python -m pip install poetry
       - name: Set up Poetry cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: poetry-cache
         with:
           path: ~/.cache/pypoetry/virtualenvs
@@ -50,11 +50,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: 3.8
       - name: Set Poetry cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: poetry-cache
         with:
           path: ~/.cache/pypoetry/virtualenvs
@@ -81,7 +81,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: 3.8
       - name: Check release
