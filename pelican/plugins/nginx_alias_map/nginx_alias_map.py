@@ -42,7 +42,7 @@ class NginxAliasMapGenerator:
         noquery_aliases = []
         for page in pages:
             aliases = page.metadata.get("alias", [])
-            if type(aliases) != list:
+            if not isinstance(aliases, list):
                 aliases = aliases.split(self.alias_delimiter)
             for alias in aliases:
                 alias = alias.strip()
@@ -62,7 +62,7 @@ class NginxAliasMapGenerator:
                 else:
                     fd.write("map $uri $%s {\n" % self.alias_map)
 
-                for (page, alias) in noquery_aliases:
+                for page, alias in noquery_aliases:
                     logger.info("[alias] Processing quoted alias %s" % alias)
                     self.create_alias(page, alias, fd)
                 fd.write("  }\n")
@@ -71,7 +71,7 @@ class NginxAliasMapGenerator:
                 fd.write("\nmap $request_uri $%s {\n" % self.alias_map)
                 if default_variable:
                     fd.write("\tdefault $%s;\n" % default_variable)
-                for (page, alias) in query_aliases:
+                for page, alias in query_aliases:
                     logger.info("[alias] Processing quoted alias %s" % alias)
                     self.create_alias(page, alias, fd)
                 fd.write("  }\n")
