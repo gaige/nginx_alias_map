@@ -1,5 +1,8 @@
-## Unreleased
-- bump dependencies
+## v2.0.3 (2024-06-29)
+
+### Fix
+
+- shield in readme
 
 ## v2.0.0 (2024-04-09)
 
