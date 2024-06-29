@@ -48,12 +48,6 @@ Werkzeug = "^3.0"
 [tool.poetry.extras]
 markdown = ["markdown"]
 
-[tool.autopub]
-project-name = "nginx_alias_map"
-git-username = "botpub"
-git-email = "botpub@autopub.rocks"
-append-github-contributor = true
-
 [tool.commitizen]
 version_provider = "poetry"
 tag_format = "v$major.$minor.$patch$prerelease"
