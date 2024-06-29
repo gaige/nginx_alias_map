@@ -1,7 +1,7 @@
 nginx_alias_map: A Plugin for Pelican
 ====================================================
 
-[![Build Status](https://img.shields.io/github/workflow/status/gaige/nginx_alias_map/build)](https://github.com/gaige/nginx_alias_map/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/gaige/nginx_alias_map/main.yml?branch=main)](https://github.com/gaige/nginx_alias_map/actions)
 [![PyPI Version](https://img.shields.io/pypi/v/pelican-nginx-alias-map)](https://pypi.org/project/pelican-nginx-alias-map/)
 ![License](https://img.shields.io/pypi/l/pelican-nginx-alias-map?color=blue)
 
