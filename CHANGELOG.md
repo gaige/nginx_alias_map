@@ -1,7 +1,11 @@
+## Unreleased
+- bump dependencies
+
 ## v2.0.0 (2024-04-09)
 
 ### Fix
 
+- version bump
 - version bump
 - more udpates
 - workflow
