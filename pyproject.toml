@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pelican-nginx-alias-map"
-version = "2.0.3"
+version = "2.0.4"
 description = "This Pelican plugin creates an nginx-compatible map between the final page locations and prior locations, defined in the `Alias` attribute for any article or page."
 authors = ["Gaige B. Paulsen <gaige@cluetrust.com>"]
 license = "MIT"
@@ -52,6 +52,11 @@ markdown = ["markdown"]
 version_provider = "poetry"
 tag_format = "v$major.$minor.$patch$prerelease"
 update_changelog_on_bump = true
+
+[tool.commitizen.customize]
+commit_parser = "^(?P<change_type>feature|bug fix|dependencies):\\s(?P<message>.*)?"
+changelog_pattern = "^(feature|bug fix|dependencies)?(!)?"
+change_type_map = {"feature" = "Feat", "bug fix" = "Fix", "dependencies" = "Build"}
 
 [tool.isort]
 # Maintain compatibility with Black
