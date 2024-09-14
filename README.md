@@ -88,6 +88,19 @@ To start contributing to this plugin, review the [Contributing to Pelican][] doc
 [existing issues]: https://github.com/gaige/nginx_alias_map/issues
 [Contributing to Pelican]: https://docs.getpelican.com/en/latest/contribute.html
 
+Updating
+--------
+
+We use dependabot for updating dependencies, conventional commits for commit messages,
+and github actions for release.
+
+To generate a release:
+
+1. `cz bump --dry-run [--increment patch]` to verify changes
+2. `cz bump [--increment patch]` to finalize
+3. `git push` to send code and `git push <tag>` to send the tag (or the less-safe `--tags`)
+
+
 License
 -------
 
