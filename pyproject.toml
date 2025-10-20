@@ -34,7 +34,7 @@ markdown = {version = ">=3.2, != 3.3.5", optional = true}
 [tool.poetry.group.dev.dependencies]
 black = {version = "^24.8"}
 flake8 = "^7.1"
-flake8-black = "^0.3"
+flake8-black = ">=0.3,<0.5"
 invoke = "^2.2"
 isort = "^5.4"
 livereload = "^2.7"
