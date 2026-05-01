@@ -35,7 +35,7 @@ markdown = {version = ">=3.2, != 3.3.5", optional = true}
 black = {version = "^24.8"}
 flake8 = "^7.1"
 flake8-black = "^0.3"
-invoke = "^2.2"
+invoke = ">=2.2,<4.0"
 isort = ">=5.4,<7.0"
 livereload = "^2.7"
 markdown = "^3.7"
